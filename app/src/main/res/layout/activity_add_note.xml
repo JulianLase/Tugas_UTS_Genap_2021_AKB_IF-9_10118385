@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/profil"
+    tools:context=".AddNoteActivity">
+
+    <ImageButton
+        android:layout_margin="20dp"
+        android:id="@+id/back"
+        android:background="@android:color/transparent"
+        android:src="@drawable/ic_back"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <EditText
+        android:id="@+id/title"
+        android:hint="title"
+        android:textColor="@color/black"
+        android:layout_marginHorizontal="20dp"
+        android:layout_below="@id/back"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+    <EditText
+        android:layout_marginTop="10dp"
+        android:id="@+id/category"
+        android:hint="category"
+        android:textColor="@color/black"
+        android:layout_marginHorizontal="20dp"
+        android:layout_below="@id/title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+    <EditText
+        android:layout_marginTop="10dp"
+        android:id="@+id/desc"
+        android:hint="description"
+        android:textColor="@color/black"
+        android:layout_marginHorizontal="20dp"
+        android:layout_below="@id/category"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+    <Button
+        android:id="@+id/buttonadd"
+        android:layout_below="@id/desc"
+        android:layout_marginTop="40dp"
+        android:layout_centerHorizontal="true"
+        android:text="Save"
+        android:layout_marginHorizontal="40dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+    <Button
+        android:id="@+id/buttondel"
+        android:layout_below="@id/buttonadd"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:backgroundTint="@android:color/holo_red_dark"
+        android:text="delete"
+        android:layout_gravity="bottom|end"
+        android:layout_marginHorizontal="40dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+</RelativeLayout>

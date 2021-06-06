@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/profil"
+    tools:context=".FragmentProfile">>
+
+    tools:context=".view.HomeFragment">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_margin="15dp"
+        android:layout_height="match_parent">
+
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="70dp"
+            android:id="@+id/foto"
+            android:layout_width="140dp"
+            android:layout_height="140dp"
+            android:src="@drawable/fotoku" />
+        <TextView
+            android:layout_centerInParent="true"
+            android:id="@+id/title_nim"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/foto"
+            android:layout_marginVertical="10dp"
+            android:text="NIM"
+            android:textColor="@color/black"
+            android:textSize="15sp" />
+        <TextView
+            android:id="@+id/nim"
+            android:layout_centerInParent="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/title_nim"
+            android:text="10118385"
+            android:textColor="@color/black"
+            android:textSize="20sp"
+            android:layout_marginBottom="30dp"
+            android:textStyle="bold" />
+        <TextView
+            android:id="@+id/title_nama"
+            android:layout_centerInParent="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/nim"
+            android:layout_marginVertical="10dp"
+            android:text="Name"
+            android:textColor="@color/black"
+            android:textSize="15sp" />
+        <TextView
+            android:id="@+id/nama"
+            android:layout_centerInParent="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/title_nama"
+            android:text="Julian Arisky Lase"
+            android:textColor="@color/black"
+            android:layout_marginBottom="30dp"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+        <TextView
+            android:id="@+id/title_kelas"
+            android:layout_centerInParent="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/nama"
+            android:layout_marginVertical="10dp"
+            android:text="Class"
+            android:textColor="@color/black"
+            android:textSize="15sp" />
+        <TextView
+            android:id="@+id/kelas"
+            android:layout_centerInParent="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/title_kelas"
+            android:layout_marginBottom="30dp"
+            android:text="IF-9"
+            android:textColor="@color/black"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+        <TextView
+            android:id="@+id/title_email"
+            android:layout_centerInParent="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/kelas"
+            android:layout_marginVertical="10dp"
+            android:text="Email"
+            android:textColor="@color/black"
+            android:textSize="15sp" />
+        <TextView
+            android:id="@+id/email"
+            android:layout_centerInParent="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/title_email"
+            android:text="ariskyjulian@gmail.com"
+            android:textColor="@color/black"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+    </RelativeLayout>
+
+</FrameLayout>
